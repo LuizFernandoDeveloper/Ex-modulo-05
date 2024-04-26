@@ -47,10 +47,23 @@ public class Calculator {
      * **/
     public static int divide(int n1, int n2){
 
-        if(n1==0 || n2==0){
+        if(toCompare(n1) ||toCompare(n2)){
             return 0;
         }
 
         return n1 / n2;
     }
+
+    /**
+     * Method for comparison
+     *
+     * @param n number for comparison
+     * @return n==0 ? return a boolean value
+     *
+     * **/
+    private static boolean toCompare(int n){
+        return n == 0 ;
+    }
+
+
 }
